@@ -5,6 +5,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 import "./assets/scss/main.scss";
 import AppProviders from "./providers/AppProvider.tsx";
 import AppRoutes from "./routes/AppRoutes.tsx";
+import "./App.css"
 
 const App: React.FC = () => {
   return (

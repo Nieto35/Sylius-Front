@@ -53,7 +53,7 @@ const UserNavigation: React.FC = () => {
                     </div>
                 </div>
             ) : (
-                <div className="col-auto">
+                <div className="col-auto ms-auto">
                     <div className="d-flex align-items-center">
                         <div className="d-lg-none">
                             <a href="/login" className="btn btn-icon btn-transparent px-0"
@@ -63,16 +63,13 @@ const UserNavigation: React.FC = () => {
                         </div>
 
                         <div className="d-none d-lg-flex align-items-center gap-2 ps-2">
-                            <IconUser stroke={1.25} size={28} />
-
-                            <Link to="/login" className="link-reset" id="login-page-button">
-                                Login
+                            <Link
+                                to="/login"
+                                className="link-reset border border-[1px] !border-[#202020] rounded-[100px] px-3 py-1 font-bold hover:bg-[#202020] hover:!text-white"
+                                id="login-page-button"
+                            >
+                                Iniciar sesión
                             </Link>
-
-                            <small className="text-black-50 px-1">|</small>
-                            <a href="/en_US/register" className="link-reset" id="register-page-button">
-                                Register
-                            </a>
                         </div>
                     </div>
                 </div>

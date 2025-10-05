@@ -31,29 +31,53 @@ const Homepage: React.FC = () => {
 
   return (
     <Layout>
-      <div className="mb-5">
-        <div className="overflow-hidden">
-          <div className="d-flex justify-content-center align-items-center position-relative">
-            <img
-              src={`${
-                import.meta.env.VITE_REACT_APP_API_URL
-              }/build/shop/images/homepage-banner.8ec389de.webp`}
-              width="1920"
-              height="793"
-              className="img-fluid"
-              alt="Home"
-            />
-            <img
-              src={`${
-                import.meta.env.VITE_REACT_APP_API_URL
-              }/build/shop/images/homepage-banner-logo.6759d0fb.webp`}
-              className="position-absolute"
-              style={{ maxWidth: '40vw' }}
-              alt="New collection"
-            />
+      <div className="lg:w-[1200px] mx-auto flex">
+
+          <div className="w-2/5">
+              <h1>
+                  Centro de FP Oficial
+
+                  <span>a distancia y presencial</span>
+              </h1>
+
+              <p>
+                  Transforma tu vida con nuestros ciclos formativos oficiales de
+                  <strong>
+                      FP Grado Medio
+                  </strong>
+                  y
+                  <strong>
+                      FP Grado Superior
+                  </strong>
+              </p>
+
+
+              <button>
+                  Solicitar información
+              </button>
+
           </div>
-        </div>
+
+          <div className="w-3/5 bg-[rgb(32,32,32)] flex">
+              <img
+                    src="/estudiante-escritorio-desktop.jpg"
+                    alt="Logo Ilerna"
+              />
+
+              <div className="flex justify-center w-full">
+                  <img
+                        className="w-[374px] h-[244px]"
+                        src="/image-promo-48-mas-dsktp.png"
+                        alt="promo"
+                    />
+              </div>
+
+          </div>
+
+
       </div>
+
+
       <div className="container mb-5">
         {isLoading && <div className="text-center">Loading products...</div>}
         {isError && (

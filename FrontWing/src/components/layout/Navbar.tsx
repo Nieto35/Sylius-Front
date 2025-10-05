@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-100 border-bottom">
+    <div className="w-100 ">
       <nav
         className="navbar offcanvas-lg offcanvas-start offcanvas-wide p-0"
         id="navbarNav"

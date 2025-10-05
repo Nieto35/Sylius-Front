@@ -37,6 +37,7 @@ services:
       MAILER_URL: "smtp://mailhog:1025"
     volumes:
       - ./Sylius:/var/www/html/back:delegated
+      - ./Sylius/.docker/dev/php.ini:/usr/local/etc/php/conf.d/custom.ini:delegated
     depends_on:
       - mysql
     expose:
