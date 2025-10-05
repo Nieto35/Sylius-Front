@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: .docker/dev/Dockerfile
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    tty: true
+    command: ["/bin/sh"]
+    ports:
+      - "5173:5173"

@@ -1,0 +1,51 @@
+services:
+#    nginx:
+#        image: nginx:alpine
+#        ports:
+#            - ${APP_PORT:-80}:80
+#        volumes:
+#            - ./:/var/www/html:delegated
+#            - ./.docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+#        depends_on:
+#            - app
+#        networks:
+#            - sylius
+
+    app:
+        build:
+            context: .docker/dev
+        environment:
+            APP_ENV: "dev"
+            DATABASE_URL: "mysql://root:mysql@mysql/sylius_%kernel.environment%?charset=utf8mb4"
+            PHP_DATE_TIMEZONE: "Europe/Warsaw"
+            PHP_XDEBUG_IDEKEY: "PHPSTORM"
+            MAILER_URL: "smtp://mailhog:1025"
+        volumes:
+            - ./:/var/www/html:delegated
+            - ./.docker/dev/php.ini:/usr/local/etc/php/conf.d/custom.ini:delegated
+        depends_on:
+            - mysql
+        networks:
+            - sylius
+
+    mysql:
+        image: mysql:8
+        platform: linux/amd64
+        environment:
+            MYSQL_ROOT_PASSWORD: mysql
+        ports:
+            - ${MYSQL_PORT:-3307}:3306
+        networks:
+            - sylius
+
+    mailhog:
+        image: mailhog/mailhog
+        ports:
+            - ${MAILHOG_PORT:-8025}:8025 # UI
+        networks:
+            - sylius
+
+
+networks:
+    sylius:
+        driver: bridge

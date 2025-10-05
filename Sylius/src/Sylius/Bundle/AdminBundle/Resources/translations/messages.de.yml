@@ -1,0 +1,84 @@
+# This file is part of the Sylius package.
+# (c) Sylius Sp. z o.o.
+
+sylius:
+    email:
+        shipment_confirmation:
+            has_been_sent_using: 'wurde gesendet über'
+            subject: 'Versandbestätigung'
+            thank_you_for_transaction: 'Vielen Dank für Ihre erfolgreiche Transaktion.'
+            you_can_check_its_location_with_the_tracking_code: 'Sie können den Standort mit dem Tracking-Code %tracking_code% nachverfolgen.'
+            your_order_with_number: 'Ihre Bestellung mit der Nummer'
+    menu:
+        admin:
+            main:
+                catalog:
+                    association_types: Assoziationstypen
+                    attributes: Attribute
+                    header: Katalog
+                    inventory: Lagerbestand
+                    options: Optionen
+                    products: Produkte
+                    taxons: Produktkategorien
+                configuration:
+                    admin_users: Administratoren
+                    channels: Verkaufskanäle
+                    countries: Länder
+                    currencies: Währungen
+                    exchange_rates: Wechselkurse
+                    header: Einstellungen
+                    locales: Sprachregionen
+                    payment_methods: Zahlungsmethoden
+                    shipping_categories: Versandkategorien
+                    shipping_methods: Versandarten
+                    tax_categories: Steuerklassen
+                    tax_rates: Steuersätze
+                    zones: Zonen
+                marketing:
+                    cart_promotions: Warenkorbaktionen
+                    catalog_promotions: Katalogaktionen
+                    header: Marketing
+                    product_reviews: Produktbewertungen
+                    promotions: Aktionen
+                customers:
+                    customers: Kunden
+                    groups: Gruppen
+                    header: Kunden
+                sales:
+                    header: Verkäufe
+                    orders: Bestellungen
+                official_support:
+                    header: Offizieller Support
+                    sylius_plus: Sylius Plus
+                    browse_plugins: Plugins durchsuchen
+                    professional_services: Professionelle Dienstleistungen
+                    find_a_partner: Partner finden
+    ui:
+        catalog_promotion:
+            dates_details: Dieser Vorgang ist zeitaufwendig! Bitte rechnen Sie mit einer Verzögerung von 2 bis 10 Minuten ab dem angegebenen Startdatum. Die Dauer hängt von der Größe des Katalogs ab.
+        channel_pricings: Kanalbepreisung
+        product:
+            product_not_active_in_channel: Dieses Produkt ist in diesem Kanal noch nicht aktiviert.
+        original_price_details: Ursprünglicher Preis – Das ist der ursprüngliche Preis der Produktvariante. Er wird im Katalog durchgestrichen angezeigt und dient als Basis für aktuelle Preisberechnungen. Ist kein Wert definiert, nutzt die Warenkorbaktions-Logik den aktuellen Preis.
+        price_details: Preis – Der aktuelle Preis der Produktvariante im Katalog. Kann explizit z. B. durch Katalogaktionen geändert werden.
+        minimum_price_details: Mindestpreis – Die Untergrenze, unter die der aktuelle Preis weder durch Katalog- noch Warenkorbaktionen fallen darf. Verwenden Sie dieses Feld, um die Rentabilität Ihrer Verkäufe zu sichern.
+        gateway:
+            no_sca_support_notice: Das gewählte Zahlungs-Gateway unterstützt kein SCA (starke Kundenauthentifizierung).
+        sales_summary: Verkaufsübersicht
+        statistics:
+            day: Tag
+            lifetime: Gesamtdauer
+            month: Monat
+            week: Woche
+            2weeks: 2 Wochen
+            year: Jahr
+        full_screen: 'Vollbild'
+        global: 'Global'
+        original_product_price_details: 'Originalpreis – dies ist der Preis des Produkts. Er wird im Katalog durchgestrichen angezeigt und dient als Basis für die Berechnung des aktuellen Preises. Wenn dieser Wert nicht definiert ist, kopiert die Katalog-Aktionslogik den Wert aus Preis in Originalpreis.'
+        overdue: 'Überfällig'
+        pending_actions: 'Ausstehende Aktionen'
+        product_price_details: 'Preis – dies ist der aktuelle Preis des Produkts im Katalog. Er kann z.B. durch Katalogaktionen verändert werden.'
+        taxon: Taxon
+        to_approve: 'zu genehmigen'
+        to_process: 'zu bearbeiten'
+        to_ship: 'zu versenden'

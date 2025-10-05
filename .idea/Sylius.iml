@@ -424,6 +424,8 @@
       <excludeFolder url="file://$MODULE_DIR$/Sylius/vendor/twig/twig" />
       <excludeFolder url="file://$MODULE_DIR$/Sylius/vendor/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/Sylius/vendor/willdurand/negotiation" />
+      <excludeFolder url="file://$MODULE_DIR$/FrontWing" />
+      <excludeFolder url="file://$MODULE_DIR$/Sylius" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
