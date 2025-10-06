@@ -38,3 +38,86 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+    font-family: 'Avenir Next Regular';
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir Next Regular'), url('/fonts/AvenirNext-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Avenir Next Demibold';
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir Next Demibold'), url('/fonts/AvenirNext-Demi-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Avenir Next Bold';
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir Next Bold'), url('/fonts/AvenirNext-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Avenir Next Heavy';
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir Next Heavy'), url('/fonts/AvenirNext-Heavy.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Avenir LT Std Black';
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 95 Black'), url('/fonts/AvenirLTStd-Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Avenir LT Std Book';
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 45 Book'), url('/fonts/AvenirLTStd-Book.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Avenir LT Std Heavy';
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 85 Heavy'), url('/fonts/AvenirLTStd-Heavy.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Avenir LT Std Light';
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 35 Light'), url('/fonts/AvenirLTStd-Light.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Avenir LT Std Medium';
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 65 Medium'), url('/fonts/AvenirLTStd-Medium.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Avenir LT Std Roman';
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 55 Roman'), url('/fonts/AvenirLTStd-Roman.woff') format('woff');
+}
+
+

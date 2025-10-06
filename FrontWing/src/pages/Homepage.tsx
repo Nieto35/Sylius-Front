@@ -31,54 +31,60 @@ const Homepage: React.FC = () => {
 
   return (
     <Layout>
-      <div className="lg:w-[1200px] mx-auto flex">
+        <div className="!bg-[#faf9f6] -z-2 min-h-[550px]">
+          <div className="lg:w-[1200px] mx-auto flex min-h-[550px]">
+              <div className="w-2/5 mt-[45px]">
+                  <h1 className="!text-[80px] !leading-[100%] !font-['Avenir_Next_Bold']">
+                      Centro de FP Oficial
 
-          <div className="w-2/5">
-              <h1>
-                  Centro de FP Oficial
+                      <span className="block !text-[32px] !leading-[40px] !mt-[10px] !font-['Avenir_Next_Bold']"> a distancia y presencial</span>
+                  </h1>
 
-                  <span>a distancia y presencial</span>
-              </h1>
+                  <p className="max-w-[335px] !mt-[30px] !mb-[40px] !text-[24px] !leading-[30px] !font-['Avenir_Next_Regular']">
+                      Transforma tu vida con nuestros ciclos formativos oficiales de
+                      <strong
+                          className="relative mx-1 whitespace-nowrap !font-['Avenir_LT_Std_Heavy'] before:content-[''] before:absolute before:bottom-[3px] before:left-0 before:w-full before:h-[15px] before:bg-[#bfeaf1] before:rounded-[20px] before:-z-1"
+                      >
+                          FP Grado Medio
+                      </strong>
+                      y
+                      <br />
+                      <strong
+                          className="relative mx-1 whitespace-nowrap !font-['Avenir_LT_Std_Heavy'] before:content-[''] before:absolute before:bottom-[3px] before:left-0 before:w-full before:h-[15px] before:bg-[#bfeaf1] before:rounded-[20px] before:-z-1"
+                      >
+                          FP Grado Superior
+                      </strong>
+                      .
+                  </p>
 
-              <p>
-                  Transforma tu vida con nuestros ciclos formativos oficiales de
-                  <strong>
-                      FP Grado Medio
-                  </strong>
-                  y
-                  <strong>
-                      FP Grado Superior
-                  </strong>
-              </p>
 
+                  <button className="bg-[#202020] hover:bg-[#00808d] transition-colors duration-300 !text-white !w-[300px] !h-[56px] !font-['Avenir_Next_Bold'] px-[15px] py-[5px] !rounded-full !text-[20px]">
+                      Solicitar información
+                  </button>
 
-              <button>
-                  Solicitar información
-              </button>
-
-          </div>
-
-          <div className="w-3/5 bg-[rgb(32,32,32)] flex">
-              <img
-                    src="/estudiante-escritorio-desktop.jpg"
-                    alt="Logo Ilerna"
-              />
-
-              <div className="flex justify-center w-full">
-                  <img
-                        className="w-[374px] h-[244px]"
-                        src="/image-promo-48-mas-dsktp.png"
-                        alt="promo"
-                    />
               </div>
 
+              <div className="w-3/5 bg-[rgb(32,32,32)] flex min-w-[730px]">
+                  <img
+                      className="w-[310px]"
+                        src="/estudiante-escritorio-desktop.jpg"
+                        alt="Logo Ilerna"
+                  />
+
+                  <div className="flex justify-center items-center w-full ">
+                      <img
+                            className="w-[437px] h-[395px]"
+                            src="/image-cierre-dsktp.webp"
+                            alt="promo"
+                        />
+                  </div>
+
+              </div>
           </div>
+        </div>
 
 
-      </div>
-
-
-      <div className="container mb-5">
+      <div className="container mb-5 mt-5">
         {isLoading && <div className="text-center">Loading products...</div>}
         {isError && (
           <div className="text-danger text-center">Error: {error.message}</div>
